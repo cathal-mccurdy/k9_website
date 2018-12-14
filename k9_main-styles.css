@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height:100%;
+    background-color: black;
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background: url(https://giffiles.alphacoders.com/206/206276.gif);
+    background-image:url(logo_copy.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,8 +18,7 @@ body {
     font-family: montserrat;
 }
 
-.nav
-{
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,6 +27,7 @@ body {
     width: 100%;
     height: 80px;
     border-bottom: 1px;
+
 }
 
 .logo
@@ -36,6 +38,7 @@ body {
     font-size: 22px;
     line-height: 80px;
     padding: 0 5em;
+    text-transform:uppercase;
 }
 
 .menu
@@ -72,14 +75,51 @@ ul li:nth-child(3) a
     border-radius: 4px;
 }
 
-.header 
+.slider
 {
+    width:100%;
+    position:absolute;
+    top: 54%;
+    transform: translate(-50%,-50%);
+}
+
+.slick-slide:focus
+{
+    outline:none;
+}
+
+.slick-slide img
+{
+    width: 52%;
+}
+
+.slick-slide
+{
+    transition: all ease-in-out 1s;
+    opacity: .2;
+}
+
+.slick-active 
+{
+    opacity: .2;
+}
+
+slick-current
+{
+    opacity: 1;
+}
+
+.header {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    height: 100px;
+    background-color: #009f8b;
+    border-radius: 15px;
+    letter-spacing: 2px;
 }
 
 .header h1
@@ -87,22 +127,41 @@ ul li:nth-child(3) a
     color: #fff;
     font-size:46px;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 60px;
+    padding: 35px, 35px;
 }
 
-.header p
-{
+.header li {
     color: #fff;
     font-size: 24px;
     font-weight: lighter;
+    margin: 20px;
+    padding: 0px,0px,0px,20px;
+    list-style: square;
+
 }
 
 .header a
 {
     color: #fff;
     Background: #009f8b;
-    padding: 18px 38px;
+    padding: 25px 30px;
     border: none;
-    font-size: 14px;
-    margin-top: 40px;
+    font-size: 25px;
+    margin-top: 75px;
+    border-radius:10px;
+    margin-bottom:20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header img
+{
+    resize: both;
+    height: 405px;
+    width: 298px;
+    border-radius: 20px;
+    padding: 35px,35px;
+    margin-bottom:40px;
+    float: left;
 }
