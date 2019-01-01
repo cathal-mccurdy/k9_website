@@ -5,17 +5,18 @@
     width: 100%;
     height:100%;
     background-color: black;
+
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background-image:url(logo_copy.png);
+    background-image: url(logo_copy.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: table;
-    font-family: montserrat;
+    font-family: montseriff;
 }
 
 .nav {
@@ -29,8 +30,8 @@ body {
     background-color: #1b1c23;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 
 .logo
@@ -39,18 +40,33 @@ body {
     float: left;
     color: #fff;
     font-size: 24px;
-    line-height: 70px;
-    padding: 0 4em;
+    line-height: 1px;
+    padding: 0 1.5em;
     text-transform:uppercase;
     padding-bottom:40px;
-    
+    width:350px;
+    padding-top:10px;
+}
+
+.logo h1
+{
+    font-size:40px;
+    padding-bottom:0px;
+}
+
+.logo h2
+{
+    font-size: 12px;
+    word-break: break-word;
+    line-height: 12px;
+    width: 325px;
 }
 
 .menu
 {
     float: right;
     line-height: 80px;
-    margin: 0 4em;
+    margin: 0 1.5em;
 }
 
 .menu ul
@@ -69,7 +85,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: lighter;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 ul li:nth-child(5) a
@@ -129,5 +145,66 @@ ul li:nth-child(5) a
     padding-bottom:30px;
 }
 
+.about 
+{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    height: 120%;
+    background-color: white;
+    width: 90%;
+    border-radius: 35px;
+    margin-bottom:50px;
+}
 
+.text p
+{
+    font-size: 22px;
+    padding:30px;
+    line-break: normal;
+    word-break: break-all;
+}
 
+.text h1
+{
+    font-size: 50px;
+}
+
+.about img
+{
+    padding:20px;
+}
+
+.learn-more 
+{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    height: 120%;
+    background-color: white;
+    width: 90%;
+    border-radius: 35px;
+    margin-bottom: 50px;
+}
+
+.learn-more img 
+{
+    resize: both;
+    height: 405px;
+    width: 298px;
+    float:right;
+}
+
+.learn-more about_product h1 ul
+{
+    float:left;
+    width:50%;
+}
